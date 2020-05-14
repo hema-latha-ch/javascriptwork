@@ -1,2 +1,2 @@
 # javascriptwork
-this reposiotyr contains all my java script learnings
+this repository contains all my java script learnings
