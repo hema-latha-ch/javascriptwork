@@ -3,27 +3,31 @@ var fruits = ["Apples",
               "Bananas",
               "stawberries",
               "watermelon"];
+
 function displayFruits()
 {
-    document.getElementById("displayarray").innerHTML= fruits.toString();
+document.getElementById("displayarray").innerHTML= getFruitsArrayString();  
+}
+function getFruitsArrayString()
+{
+    return fruits.toString();
 }
 function findLength()
 {
-   var fruitsize = fruits.length;
-   document.getElementById("arraylength").innerHTML = fruitsize;
+   document.getElementById("arraylength").innerHTML = fruits.length;
 }
 function insertItem()
-{
-    var insert = fruits.push("Mango",1,100);
-    document.getElementById("insertitem").innerHTML = insert;
-    //document.write("inserted item "+insert+"");
-    displayFruits();
+{  
+    
+    document.getElementById("insert").innerHTML = fruits.push("Mango",1,100);
+
+    document.getElementById("final").innerHTML= getFruitsArrayString();
 }
 function removeItem()
 {
    var remove = fruits.pop();
-   document.getElementById("removeitem").innerHTML = remove;
-   displayFruits();
+   document.getElementById("remove").innerHTML = remove;
+   
 }
 
 
