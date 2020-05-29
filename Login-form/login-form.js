@@ -10,3 +10,8 @@ function isLoginSuccess(email,inputpassword)
 {
     return (email == "hemalatha@abc.com" && inputpassword == "abcd1234")?  true:  false;
 }
+function resetValues()
+{
+    document.getElementById("emailidtextbox").value = "";
+    document.getElementById("passwordtextbox").value = "";
+}
