@@ -29,6 +29,7 @@ function isPasswordStrengthChecker(mypassword)
 
     let strengthValue = {
         'caps' : false,
+        'length' : false,
         'special' : false,
         'numbers' : false,
         'small' : false
@@ -36,7 +37,7 @@ function isPasswordStrengthChecker(mypassword)
     if(mypassword.length>=8)
     {       
         strengthValue.length = true;
-        console.log("does passoword lemgth is greater than 8"+ strengthValue.length)
+-        console.log("does passoword lemgth is greater than 8"+ strengthValue.length)
     }
     for(let index=0; index<=mypassword.length; index++)
     {
@@ -57,19 +58,13 @@ function isPasswordStrengthChecker(mypassword)
         {
             strengthValue.special = true;
         }
-        let strengthIndicator = 0;
-        for(let metric in strengthValue) 
-        {
-        if(strengthValue[metric] === true) 
-        {
-        strengthIndicator++;
+        
   }
-}
-    console.log("Your password: " + password + " ( " + strength[strengthIndicator] + " )");
-    }
     console.log("does password contain caps :"+strengthValue.caps);
     console.log("does password contain numbers : "+strengthValue.numbers);
     console.log("does password contain small :"+strengthValue.small);
     console.log("does password contain special :"+strengthValue.special);
-    
 }
+    
+    
+    
