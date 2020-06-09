@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Created By Hema</title>
+        <script type="text/javascript" src="Validation-for-registration-form.js"></script>
+        <link rel="stylesheet" type="text/css" href="Validation-for-registration-form.css">
+    </head>
+    <body>
+        <div id = "form">
+        <form name="registration" onsubmit=" return isValidation()">
+           <fieldset>
+               <legend style = "align-content: center;">REGISTRATION DETAILS</legend><br>
+               <label>Enter First Name</label><br>
+               <input type="text" id="firstnametextbox" name = "firstname"></br>
+               <label>Enter Last Name</label><br>
+               <input type="text" id="lastnametextbox" name = "lastname"></br>
+               <label>Enter Email-Id</label></br>
+               <input type="text" id="emailtextbox" name = "email"></br>
+               <label>Enter Gender</label><br>
+               <select name="Gendername">
+                   <option selected = "" value="Default"></option>
+                   <option>Male</option>
+                   <option>Female</option>
+               </select><br>
+               <label>Enter Mobile Number</label><br>
+               <input type="text" id = "mobiletextbox" name = "mobilenumber"></br></br>
+               <input type="submit" id = "submitbutton" value = "Register" onclick="isValidation()">
+               <p id = "successmessage"></p>
+
+
+           </fieldset>
+        </form>
+        </div>
+    </body>
+</html>
